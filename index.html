@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Form for Bus Ticketing System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="root">
+    <form class="busForm" action="#" method="#">
+      <div class="main">
+        <div class="username">
+          <label for="">User Name</label><br />
+          <input name="username" type="text" class="username" data-testid="username" placeholder="UserName" />
+        </div>
+        <div class="tripType">
+          <input id="one" name="trip" type="radio" class="oneWay" data-testid="one" />
+          <label for="one">One Way Trip</label>
+
+          <input id="round" name="trip" type="radio" class="roundTrip" data-testid="round" />
+          <label for="round">Round Trip</label>
+        </div>
+        <div class="tripDate">
+          <label for="">Date of Trip</label><br />
+          <input id="date" min="2021-05-04" max="2021-10-30" type="date" class="dateOfTrip" data-testid="date" />
+        </div>
+        <div class="passengers">
+          <label for="">Number of Passengers</label><br />
+          <input id="pass" type="number" min="1" max="24" data-testid="passengers" />
+        </div>
+        <div class="comment">
+          <label for="">Comment</label><br />
+          <textarea name="comment" id="comment" cols="30" rows="5" data-testid="comment"></textarea>
+        </div>
+        <button id="submitBtn" data-testid="submit" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+
+
+    <div id="error" class="popUp" data-testid="error"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

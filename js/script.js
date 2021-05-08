@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
         details.push("Trip selected")
     }
     
-    if (Number(passengers.value) <= 0 || Number(passengers.value) >= 24){
+    if (Number(passengers.value) < 1 || Number(passengers.value) > 20){
         message.push("Invalid Input in Passengers")
     }
     else{
